@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vuejs实现很多照片组成爱心样式 www.bootstrapmb.com</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="love">
+        <!-- 程式自動生成FB圖片 最多53張 Start -->
+        <a target="new"
+           :href="row.href"
+           v-for="row in dataRow"
+           :title="row.title">
+            <img :src="row.src" :alt="row.title">
+        </a>
+        <!-- 程式自動生成FB圖片 最多53張 End -->
+    </div>
+    <!-- partial -->
+
+    <script src='vue.min.js'></script>
+    <script src="./script.js"></script>
+</body>
+</html>
